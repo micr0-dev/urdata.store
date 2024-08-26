@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    overflow-x: hidden;
+}
+
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.logo-image {
+    width: 40px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav .logo h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero-section {
+    background: linear-gradient(to right, #56CCF2, #2F80ED);
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero-content h2 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.cta-button {
+    background: #4CAF50;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.info-section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.info-section h2 {
+    margin-top: 0;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.info-card {
+    background: #f9f9f9;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+}
+
+.service-cards,
+.testimonial-cards,
+.process-steps,
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card,
+.testimonial-card,
+.process-step,
+.team-member {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card i,
+.process-step i {
+    font-size: 2.5em;
+    color: #2F80ED;
+    margin-bottom: 15px;
+}
+
+.service-card h3,
+.process-step h3,
+.team-member h3 {
+    margin: 20px 0;
+}
+
+.testimonial-card p {
+    font-style: italic;
+}
+
+.team-member img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.contact-section {
+    background: #f0f0f0;
+    padding: 70px 20px;
+}
+
+.contact-section h2 {
+    margin-top: 0;
+}
+
+.contact-section form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+}
+
+.contact-section form input,
+.contact-section form textarea {
+    padding: 15px;
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contact-section form button {
+    background: #4CAF50;
+    color: white;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-info-card {
+    background: #f9f9f9;
+    margin-top: 30px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.animate__animated {
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+.animate__animated.animate__fadeIn {
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-link {
+    color: rgb(200, 119, 255);
+}
