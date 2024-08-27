@@ -17,6 +17,26 @@ header {
 
 .logo-image {
     width: 40px;
+   
+}
+
+@media only screen and (max-width: 900px){
+    .logo-image {
+        width: 40px;
+        margin-bottom: 50px;
+        margin-left: 70px;
+    }
+
+    nav ul li {
+        margin-bottom: 9px;
+        
+    }
+    
+
+
+
+
+
 }
 
 nav {
@@ -25,6 +45,9 @@ nav {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    overflow:hidden;
+    flex-wrap: wrap;
+    
 }
 
 nav .logo {
@@ -42,6 +65,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap:wrap; 
 }
 
 nav ul li {
@@ -185,6 +209,7 @@ nav ul li a {
     cursor: pointer;
     border-radius: 5px;
     font-size: 1em;
+    
 }
 
 .contact-info-card {
@@ -196,6 +221,32 @@ nav ul li a {
     text-align: left;
     max-width: 600px;
     margin: 30px auto 0 auto;
+
+}
+
+
+@media only screen and (max-width: 900px){
+
+
+    .contact-section form {
+        max-width: 300px;
+        margin: auto auto auto 7px;
+        display: grid;
+        gap: 15px;
+    }
+    
+    .contact-section form button {
+        background: #4CAF50;
+        color: white;
+        padding: 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 1em;
+        margin :0 10px 0 10px ;
+        
+    }
+
 }
 
 footer {
@@ -224,3 +275,4 @@ footer {
 .footer-link {
     color: rgb(200, 119, 255);
 }
+
